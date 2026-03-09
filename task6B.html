@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .contain{
+                display: grid;
+                grid-template-columns: 200px 1fr;
+                grid-template-rows:  auto auto 500px  auto auto;
+                background-color: antiquewhite;
+                flex-wrap: wrap;
+                grid-template-areas: "header header"
+                "sub sub"
+                "categories products"
+                "footer footer"
+                "tagline tagline"; 
+            
+            }
+            .products{
+                grid-area: products;
+                width:auto;
+                height:auto;
+            }
+            .header{
+                grid-area: header;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: black;
+                text-align: center;
+            }
+            .sub{
+                grid-area: sub;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: black;
+                text-align: center;
+               
+            
+
+            }
+            
+            
+            .categories{
+                grid-area: categories;
+                width:auto;
+                border:3px solid black;
+                height:500px;
+                text-align: center;
+               
+            }
+            .categories h3{
+                text-align: center;
+                font-family: cursive;
+                color: brown;
+
+            }
+            .products iframe{
+                grid-area: products;
+                display:flex;
+                width:100%;
+                height:500px;
+                flex-wrap: wrap;
+                
+                
+
+            }
+            
+            .footer{
+                grid-area: footer;
+            }
+            .tagline{
+                grid-area: tagline;
+                text-align: center;
+               
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="contain">
+            <div class="header">
+                <h3>My E-commerce Store</h3>
+            </div>
+            <div class="sub">
+                <h3>flash Sale upto 50% off🔥</h3>
+            </div>
+            <div class="categories">
+                <h3>Categories</h3>
+                <p><a href="electronics.html" target="cat">Electronics</a></p>
+                <p><a href="clothing.html" target="cat">Clothing</a></p>
+                <p><a href="home appliances.html" target="cat">Home Appliances</a></p>
+                <p><a href="books.html" target="cat">Books</a></p>
+            </div>
+            
+            <div class="products">
+                <iframe src="electronics.html" name="cat"></iframe>
+            </div>
+            
+            
+            <div class="footer">
+                <h3 style="text-align: center;">2026 My E-Commerce Store CSE25014</h3>
+            </div>
+            <div class="tagline">
+                <h3 style="text-align: center;">Deals that make you smile😊!!</h3>
+            </div>
+        </div>
+
+    </body>
+</html>
