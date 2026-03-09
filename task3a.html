@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body style="text-align: center; background-color: rgb(115, 180, 182);">
+        <h2><b>College Admission Registration</b></h2>
+        <form style="text-align: center;" width="50%">
+        <table width="50%" border="2" style="color: black; text-align: center; margin: auto;">
+            <tr>
+               <td> <label for="name">Full Name</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-Mail</label></td>
+                <td><input type="email" id="email" name="new"></td>
+            </tr>
+            <tr>
+                <td><label for="num">Phone Number</label></td>
+                <td><input type="number" id="num" name="new"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td><input type="radio" id="gender" value="Male">Male
+                    <input type="radio" id="gender" value="Female">Female
+                    <input type="radio" id="gender" value="other">other
+                </td>
+            </tr>
+            <tr>
+                <td><label for="course">Course Applying For:</label></td>
+                <td>
+                    <select id="course" name="course">
+                        <option value="">Select</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH">MECH</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hob">Hobbies:</label></td>
+                <td><input type="checkbox" id="hob" value="sports" name="non">Sports
+                    <input type="checkbox" id="hob" value="Music" name="non">Music
+                    <input type="checkbox" id="hob" value="Reading" name="non">Reading
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date Of Birth:</label></td>
+                <td><input type="date" id="dob" name="new"></td>
+            </tr>
+            <tr>
+                <td><label for="file">Upload Certificates:</label></td>
+                <td><input type="file" multiple id="file" name="old"></td>
+            </tr>
+            <tr>
+                <td><label for="add">Address</label></td>
+                <td><input type="text" id="add" name="old"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="submit">
+                                <input type="button" value="reset"></td>
+
+            </tr>
+
+           
+                
+        
+        </table>
+        </form>
+        
+    </body>
+</html>
