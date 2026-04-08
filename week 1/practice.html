@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms</title>
+    </head>
+    <body>
+        <h2 text-allign="center">college admission registration</h2>
+        <table style="border:2px solid black">
+            <form>
+                <tr>
+                    <td><label for="name">full name:</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">email:</label></td>
+                    <td><input type="email" id="email"></td>
+
+                </tr>
+                <tr>
+                    <td><label for="num">phone number:</label></td>
+                    <td><input type="number" id="num"></td>
+                </tr>
+                <tr>
+                    <td><label for="gen">gender:</label></td>
+                    <td><input type="radio" id="gen" value="male">male
+                        <input type="radio" id="gen" value="female">female
+                        <input type="radio" id="gen" value="others">others
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="hob">hobbies:</label></td>
+                    <td><input type="checkbox" id="hob" value="music">music
+                        <input type="checkbox" id="hob" value="dance">dance
+                        <input type="checkbox" id="hob" value="play">play</td>
+                </tr>
+                <tr>
+                    <td><label for="sel">course applying for:</label>
+                    </td>
+                    <td><select >
+                        <option value="btech">btech</option>
+                        <option value="degree">degree</option>
+                        <option value="mbbs">mbbs</option>                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>name</label></td>
+                    <td><input list="bro"><datalist id="bro">
+                        <option value="deepthi">deepthi</option>
+                        <option value="geethika">geethika</option>
+                        <option value="jahnavi">jahnavi</option>                                     
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td><label>date</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label>address</label></td>
+                    <td><textarea rows="5" cols="7"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">submit</button>
+                                    <button type="reset">reset</button></td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
