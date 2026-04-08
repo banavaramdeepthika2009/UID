@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .Ball{
+                width:150px;
+                height:150px;
+                background-color: orange;
+                border-radius: 70%;
+                position:relative;
+                margin:100px auto;
+                animation-name: Bouncing;
+                animation-duration: 3s;
+                animation-delay: 1.0257s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes Bouncing {
+                from{
+                    top:0px;
+                }
+                to{
+                    top:200px;
+                }
+            }
+        </style>
+    </head>
+    <body style="background-color: #111827;">
+        <h2 style="font-family: Arial, sans-serif; font-style: normal; color: #facc15; text-align: center; text-decoration: underline; font-size: 30px;">
+            A Ball that moves up and down continuously using CSS Animations
+        </h2>
+        <div class="Ball"></div>
+    </body>
+</html>
