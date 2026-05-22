@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <script>
+        function lar(){
+            array=[];
+            let i=1;
+
+            while(i<=5){
+                let value=parseInt(prompt("enter a number:"));
+                array.push(value);
+                i++;
+            }
+            let lar=array[0];
+                for(let j=1;j<array.length;j++){
+                    if(array[j] > lar){
+                    lar = array[j];
+                }
+            }
+            document.write("Largest number is: " + lar);
+
+
+                }       
+        lar();
+    </script>
+</body>
+</html>

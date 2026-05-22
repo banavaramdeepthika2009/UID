@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function grade(){
+                let i=1;
+                let sum=0;
+                while(i<=6){
+                    let marks=parseInt(prompt("enter your marks in sub "+i));
+                    
+                    sum=marks+sum;
+                    i++
+                }
+                let avg=sum/6;
+                if(avg<60){
+                    document.write("fail");
+                }else if(avg<70){
+                    document.write("grade d");
+                }else if(avg<80){
+                    document.write("grade c");
+                }else if(avg<90){
+                    document.write("garde d")
+
+                }else if(avg<100){
+                    document.write("grade a")
+                }
+            }
+            grade()
+
+        </script>
+    </body>
+</html>
