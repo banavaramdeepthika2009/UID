@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function arm(){
+                let a=parseInt(prompt("enter a number"));
+                let temp=a;
+                let sum=0;
+                let digits=a.toString().length;
+                while(temp>0){
+                    let digit=temp%10;
+                    sum+=digit**digits;
+                    temp=Math.floor(temp/10);
+                }
+                if(sum==a){
+                    document.write(a+"is a armstrong number")
+                }else{
+                    document.write(a+"is not a armstrong number")
+                }
+            }
+            arm()
+
+        </script>
+    </body>
+</html>
