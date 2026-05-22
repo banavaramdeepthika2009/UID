@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div.p{
+                width:100px;
+                height:100px;
+                border:2px black solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form>
+                <label>email</label>
+                <input id="name" >
+            </form>
+            <button onclick="email()">Submit</button>
+        </div>
+        
+        <script>
+            function email(){
+                let user=document.getElementById("name").value;
+                let pattern=/^[a-zA-Z0-9._]+@[a-z0-9]+\.[a-z]{3,}$/;
+                if(pattern.test(user)){
+                    alert("valid email id!!")
+                    return true;
+
+                    
+                
+                }else{
+                    alert("invalid email id")
+                    return false;
+
+                }
+
+
+
+            }
+
+        </script>
+    </body>
+</html>

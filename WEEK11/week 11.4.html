@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <form>
+                <label>mobile number:</label>
+                <input id="num">
+            </form>
+                <p id="result"></p>
+                <button onclick="phone()">submit</button>
+                <script>
+                    function phone(){
+                        let pattern=/^[0-9]{10}$/;
+                        let user=document.getElementById("num").value;
+                        let result=document.getElementById("result");
+                        if(pattern.test(user)){
+                            result.innerHTML="valid"
+
+                        }else{
+                            result.innerHTML="invalid"
+                        }
+                    }
+                    phone()
+                </script>
+                
+
+            
+        </div>
+    </body>
+</html>

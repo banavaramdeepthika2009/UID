@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <form>
+                <label >name:</label>
+                <input id="name"> 
+                <label>email:</label> 
+                <input id="email">
+                <label>password</label>  
+                <input id="pass">        
+            </form>
+            <p id="result"></p>
+            <p id="res"></p>
+            <p id="rel"></p>
+            <button onclick="validate()">submit</button>
+        </div>
+        <script>
+            function validate(){
+                
+                function username(){
+                    let pattern1=/^[a-zA-Z]{3,}$/;
+                    let result=document.getElementById("result");
+                    let username=document.getElementById("name").value;
+                    if(pattern1.test(username)){
+                    result.innerHTML="username:" + username
+                    }else{
+                    result.innerHTML="invalid username"
+                    }
+
+
+                }
+                username()
+               
+                function email(){
+                    let pattern2=/^[a-zA-Z0-9._]+@[a-z]+\.[a-z]{2,}$/;
+                    let result=document.getElementById("res");
+                    let email=document.getElementById("email").value;
+                    if(pattern2.test(email)){
+                        result.innerHTML="email:" + email;
+                    }else{
+                        result.innerHTML="invalid email address"
+                    }
+
+                }
+                email()
+
+                
+                function phone(){
+                    let pattern3=/^[a-zA-Z0-9@!#$%&*]{6,}$/;
+                    let result=document.getElementById("rel");
+                    let password=document.getElementById("pass").value;
+                    if(pattern3.test(password)){
+                        result.innerHTML="password:" + password
+                    }else{
+                        result.innerHTML="invalid password"
+                    }
+
+                }
+                phone()
+                
+
+                
+                
+                
+                
+                
+            }
+        </script>
+            
+            
+            
+
+
+    </body>
+</html>
+        
+
+    

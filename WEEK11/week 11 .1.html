@@ -1,0 +1,33 @@
+
+    
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <p>NAME:</p>
+            <input id="name">
+            <p id="result"></p>
+            <button onclick="user()">submit</button>
+        </div>
+
+        <script>
+        function user(){
+            let pattern = /^[a-zA-Z0-9]{5,}$/;
+            let username = document.getElementById("name").value;
+            let result = document.getElementById("result");
+
+            if(username === ""){
+                result.innerHTML = "Field is empty";
+            }
+            else if(username.length < 5){
+                result.innerHTML = "Username is less than 5 characters";
+            }
+            
+            else{
+                result.innerHTML = "Username: " + username;
+            }
+        }
+        </script>
+
+    </body>
+</html>

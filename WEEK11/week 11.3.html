@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    
+        <body>
+            <div>
+                <form>
+                    <label for="name" >password:</label>
+                    <input id="name" type="password" onkeyup="password()">
+                </form>
+                
+                <button>submit</button>
+                <p id="new"></p>
+            </div>
+            <script>
+                function password(){
+                    let user=document.getElementById("name").value;
+                    let pattern=/^[a-zA-Z0-9_@#$%^&*!]{5,}$/;
+                    let result=document.getElementById("new");
+
+                    if(pattern.test(user)){
+                        result.innerHTML=("strong password")
+
+                    }else{
+                        result.innerHTML=("weak password")
+                    }
+                }
+
+            </script>
+        </body>
+   
+</html>
